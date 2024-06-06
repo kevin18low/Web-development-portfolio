@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main-container {
+      display: grid;
+      grid-template: 414px 325px / 320px 419px;
+      width: 748px;
+      height: 748px;
+      gap: 9px;
+      background-color: black;
+    }
+
+    .main-container > * {
+      background-color: #EFEEE4;
+    }
+
+    .tl {
+      background-color: #CD2727;
+    }
+
+    .bl-container {
+      display: grid;
+      grid-template-rows: 296px 20px;
+      gap: 9px;
+      background-color: black;
+    }
+
+    .bl-container > * {
+      background-color: #EFEEE4;
+    }
+
+    .br-container {
+      display: grid;
+      grid-template: 132px 155px 20px / 198px 153px 50px;
+      gap: 9px;
+      background-color: black; 
+    }
+
+    .br-container > * {
+      background-color: #EFEEE4;
+    }
+
+    .br-big {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .br-tall {
+      grid-row: span 2;
+    }
+
+    .br-blue {
+      background-color: #31389F;
+      border-bottom: 10px solid black;
+    }
+
+    .br-yellow {
+      background-color: gold;
+    }
+
+    .br-dark {
+      background-color: #292626;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="main-container">
+    <div class="tl"></div>
+    <div class="tr"></div>
+    <div class="bl-container">
+      <div class="bl-top"></div>
+      <div class="bl-bot"></div>
+    </div>
+    <div class="br-container">
+      <div class="br-big"></div>
+      <div class="br-blue"></div>
+      <div class="br-tall"></div>
+      <div class="br-yellow"></div>
+      <div class="br-dark"></div>
+      <div class="br"></div>
+    </div>
+  </div>
+</body>
+
+</html>
